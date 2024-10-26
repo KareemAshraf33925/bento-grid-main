@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Purple100: hsl(254, 88%, 90%);
+    --Purple500: hsl(256, 67%, 59%);
+    --Yellow100: hsl(31, 66%, 93%);
+    --Yellow500: hsl(39, 100%, 71%);
+   --White: hsl(0, 0%, 100%);
+   --Black: hsl(0, 0%, 7%);
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color:#d8d4d4;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* start-header */
+ header .container{
+    margin: 50px 100px;
+ }
+ header .container .grid{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(3,20%);
+    gap: 20px 20px;
+ }
+ header .container .grid .social-media{
+    background-color: var(--Purple500); 
+    padding: 60px;
+    border-radius: 10px;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+ }
+ header .container .grid .social-media h1{
+    font-family:"DM Sans" ;
+    font-weight: 800;
+    color: var(--White);
+    font-size: 50px;
+    font-style: italic;
+ }
+ header .container .grid .social-media h1 .bold{
+    display: inline-block;
+    color: var(--Yellow500);
+ }
+ header .container .grid .social-media img{
+    display: block;
+    width: 150px;
+    margin-left: 160px;
+ }
+ header .container .grid .social-media .over{
+    display: block;
+    font-family:"DM Sans" ;
+    font-weight: 400;
+    color: var(--Purple100);
+    margin-top: 10px;
+ }
+ header .container .grid .mangeplatform{
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 60px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    overflow-x: hidden;
+ }
+ header .container .grid .mangeplatform img{
+    width: 300px;
+ }
+ header .container .grid .mangeplatform h2{
+    font-family:"DM Sans" ;
+    font-weight: 400;
+    font-size: 30px;
+ }
+ header .container .grid .maintain{
+    background-color: var(--Yellow500);
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 0px;
+    position: relative;
+ }
+ header .container .grid .maintain h2{
+    font-family:"DM Sans" ;
+    font-weight: 800;
+    font-size: 30px;
+ }
+ header .container .grid .maintain img{
+    width: 200px;
+    position: absolute;
+    top: 270px;
+ }
+ header .container .grid .schedule{
+    background-color: var(--Purple100);
+    border-radius: 10px;
+    padding: 60px 0px 60px 20px;
+    overflow: hidden;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+ }
+ header .container .grid .schedule img{
+    width: 300px;
+    margin: 20px 0;
+ }
+ header .container .grid .schedule h2{
+    font-family:"DM Sans" ;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 40px;
+ }
+ header .container .grid .schedule p{
+    font-family:"DM Sans" ;
+    font-weight: 400;
+    margin-right: 40px;
+ }
+ header .container .grid .grow{
+    background-color: var(--Purple500);
+    border-radius: 10px;
+    padding:20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+ }
+ header .container .grid .grow img{
+    width: 250px;
+ }
+ header .container .grid .grow h2{
+    font-family:"DM Sans" ;
+    font-weight: 800;
+    color: var(--White);
+    font-size: 30px;
+ }
+ header .container .grid .audience{
+    padding: 30px;
+    background-color: var(--White);
+    border-radius: 10px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+ }
+ header .container .grid .audience h2{
+    font-family:"DM Sans" ;
+    font-weight: 800;
+    font-size: 50px;
+ }
+ header .container .grid .audience p{
+    font-family:"DM Sans" ;
+    font-weight: 400;
+    margin: 20px 0;
+ }
+ header .container .grid .audience img{
+    width: 200px;
+ }
+ header .container .grid .create{
+    padding: 60px 30px;
+    background-color: var(--Yellow100);
+    border-radius: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-style: italic;
+ }
+ header .container .grid .create h2{
+    font-family:"DM Sans" ;
+    font-weight: 800;
+    font-size: 35px;
+ }
+ header .container .grid .create h2 .quick{
+    color: var(--Purple500);
+ }
+ header .container .grid .create img{
+    width: 170px;
+    margin-top: 20px;
+ }
+ header .container .grid .ai{
+    padding: 30px;
+    background-color: var(--Yellow500);
+    border-radius: 10px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+ }
+ header .container .grid .ai h2{
+    font-size: 45px;
+    font-weight: 400;
+ }
+ header .container .grid .ai img{
+    width: 250px;
+    margin: 50px 0;
+ }
+
+/* end-header */
+/* media-query */
+@media(max-width:1024px){
+   header .container .grid .create h2 {
+      font-size: 27px;
+    }
+    header .container .grid .create img {
+      width: 155px;
+    }
+    header .container .grid .social-media h1 {
+      font-size: 40px;
+    }
+    header .container .grid .social-media img {
+      margin-left: 80px;
+    }
+    header .container .grid .maintain img {
+      top: 177px;
+    }
+    header .container .grid .ai img {
+      width: 172px;
+    }
+    header .container .grid .audience img {
+      width: 155px;
+    }
+    header .container .grid .grow img {
+      width: 180px;
+    }
+    header .container .grid .mangeplatform {
+      padding: 20px;
+    }
+    header .container .grid .mangeplatform img {
+      width: 245px;
+    }
+    header .container .grid .mangeplatform h2 {
+      font-size: 26px;
+    }
+}
+@media(max-width:768px){
+   header .container .grid .create h2 {
+      font-size: 23px;
+    }
+    header .container .grid .create img {
+      width: 105px;
+    }
+    header .container .grid .social-media h1 {
+      font-size: 22px;
+    }
+    header .container .grid .social-media img {
+      margin-left: 20px;
+    }
+    header .container .grid .schedule img {
+      width: 196px;
+    }
+    header .container .grid .ai h2 {
+      font-size: 23px;
+    }
+    header .container .grid .ai img {
+      width: 105px;
+    }
+    header .container .grid .mangeplatform h2 {
+      font-size: 16px;
+    }
+    header .container .grid .mangeplatform img {
+      width: 160px;
+    }
+    header .container .grid .maintain h2 {
+      font-size: 22px;
+    }
+    header .container .grid .maintain img {
+      top: 148px;
+      width: 135px;
+    }
+    header .container .grid .audience h2 {
+      font-family: "DM Sans";
+      font-weight: 800;
+      font-size: 30px;
+    }
+    header .container .grid .audience img {
+      width: 105px;
+    } 
+    header .container .grid .grow h2 {
+      font-size: 19px;
+    }
+    header .container .grid .grow img {
+      width: 120px;
+    }
+}
+@media(max-width:480px){
+   header .container .grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    header .container {
+      margin: 20px 100px;
+    }
+    header .container .grid .social-media {
+      width: 460px;
+      order: 0;
+    }
+    header .container .grid .social-media h1 {
+      font-size: 40px;
+    }
+    header .container .grid .social-media img {
+      margin-left: 90px;
+    }
+    header .container .grid .mangeplatform {
+      width: 460px;
+    }
+    header .container .grid .mangeplatform img {
+      width: 412px;
+    }
+    header .container .grid .mangeplatform h2 {
+      font-size: 31px;
+    }
+    header .container .grid .maintain {
+      width: 460px;
+    }
+    header .container .grid .maintain h2 {
+      font-size: 30px;
+    }
+    header .container .grid .maintain img {
+      top: 17px;
+      width: 210px;
+      position: relative;
+      right: 110px;
+    }
+    header .container .grid .schedule {
+      width: 460px;
+    }
+    header .container .grid .schedule h2 {
+      font-size: 33px;
+    }
+    header .container .grid .schedule img {
+      width: 425px;
+    }
+    header .container .grid .schedule p {
+      text-align: center;
+    }
+    header .container .grid .grow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 460px;
+      gap: 20px;
+    }
+    header .container .grid .grow img {
+      width: 308px;
+    }
+    header .container .grid .grow h2 {
+      font-size: 52px;
+      text-align: center;
+      font-weight: 400;
+    }
+    header .container .grid .audience {
+      width: 460px;
+    }
+    header .container .grid .audience h2 {
+      font-size: 45px;
+    }
+    header .container .grid .audience p {
+      font-size: 18px;
+    }
+    header .container .grid .audience img {
+      width: 164px;
+    }
+    header .container .grid .create {
+      width: 460px;
+    }
+    header .container .grid .create h2 {
+      font-size: 29px;
+    }
+    header .container .grid .create img {
+      width: 195px;
+    }
+    header .container .grid .ai {
+      width: 460px;
+    }
+    header .container .grid .ai h2 {
+      font-size: 39px;
+    }
+    header .container .grid .ai img {
+      width: 255px;
+    }
+}
+@media(max-width:375px){
+   header .container .grid .social-media {
+      width: 360px;
+    }
+    header .container .grid .social-media h1 {
+      font-size: 29px;
+    }
+    header .container .grid .social-media img {
+      margin-left: 45px;
+    }
+    header .container .grid .mangeplatform {
+      width: 360px;
+    }
+    header .container .grid .mangeplatform img {
+      width: 345px;
+    }
+    header .container .grid .mangeplatform h2 {
+      font-size: 29px;
+    }
+    header .container .grid .maintain {
+      width: 360px;
+    }
+    header .container .grid .maintain h2 {
+      font-size: 29px;
+    }
+    header .container .grid .maintain img {
+      top: 18px;
+      right: 55px;
+    }
+    header .container .grid .schedule {
+      width: 360px;
+    }
+    header .container .grid .schedule h2 {
+      font-size: 29px;
+    }
+    header .container .grid .schedule img {
+      width: 320px;
+    }
+    header .container .grid .grow {
+      width: 360px;
+    }
+    header .container .grid .grow img {
+      width: 300px;
+    }
+    header .container .grid .grow h2 {
+      font-size: 29px;
+    }
+    header .container .grid .audience {
+      width: 360px;
+    }
+    header .container .grid .create {
+      width: 360px;
+    }
+    header .container .grid .ai {
+      width: 360px;
+    }
+}
+@media(max-width:320px){
+   header .container .grid .social-media {
+      width: 300px;
+    }
+    header .container .grid .social-media h1 {
+      font-size: 22px;
+    }
+    header .container .grid .social-media img {
+      margin-left: 16px;
+    }
+    header .container .grid .mangeplatform {
+      width: 300px;
+    }
+    header .container .grid .mangeplatform img {
+      width: 265px;
+    }
+    header .container .grid .mangeplatform h2 {
+      font-size: 22px;
+    }
+    header .container .grid .maintain {
+      width: 300px;
+    }
+    header .container .grid .maintain h2 {
+      font-size: 22px;
+    }
+    header .container .grid .maintain img {
+      top: 18px;
+      right: 30px;
+    }
+    header .container .grid .schedule {
+      width: 300px;
+    }
+    header .container .grid .schedule h2 {
+      font-size: 22px;
+    }
+    header .container .grid .schedule img {
+      width: 265px;
+    }
+    header .container .grid .grow {
+      width: 300px;
+    }
+    header .container .grid .grow img {
+      width: 265px;
+    }
+    header .container .grid .grow h2 {
+      font-size: 22px;
+    }
+    header .container .grid .audience {
+      width: 300px;
+    }
+    header .container .grid .create {
+      width: 300px;
+    }
+    header .container .grid .ai {
+      width: 300px;
+    }
+}
+@media(max-width:240px){
+   header .container .grid .social-media {
+      width: 220px;
+    }
+    header .container .grid .social-media h1 {
+      font-size: 12px;
+    }
+    header .container .grid .social-media img {
+      margin-left: 0px;
+      width: 100px;
+    }
+    header .container .grid .social-media .over {
+      font-size: 11px;
+    }
+    header .container .grid .mangeplatform {
+      width: 220px;
+    }
+    header .container .grid .mangeplatform img {
+      width: 200px;
+    }
+    header .container .grid .mangeplatform h2 {
+      font-size: 12px;
+    }
+    header .container .grid .maintain {
+      width: 220px;
+    }
+    header .container .grid .maintain h2 {
+      font-size: 12px;
+    }
+    header .container .grid .maintain img {
+      top: 17px;
+      right: 0px;
+      width: 190px;
+    }
+    header .container .grid .schedule {
+      width: 220px;
+    }
+    header .container .grid .schedule h2 {
+      font-size: 12px;
+    }
+    header .container .grid .schedule img {
+      width: 200px;
+    }
+    header .container .grid .grow {
+      width: 220px;
+    }
+    header .container .grid .grow img {
+      width: 200px;
+    }
+    header .container .grid .grow h2 {
+      font-size: 12px;
+    }
+    header .container .grid .audience {
+      width: 220px;
+    }
+    header .container .grid .create {
+      width: 220px;
+    }
+    header .container .grid .create h2 {
+      font-size: 15px;
+    }
+    header .container .grid .create img {
+      width: 155px;
+    }
+    header .container .grid .ai {
+      width: 220px;
+    }
+    header .container .grid .ai h2 {
+      font-size: 15px;
+    }
+    header .container .grid .ai img {
+      width: 185px;
+    }
+}
